@@ -110,15 +110,8 @@ class VideoItemDetails extends Component {
   successView = () => {
     const {videoDetails, like, dislike} = this.state
 
-    const {
-      publishedAt,
-      title,
-      videoUrl,
-      viewCount,
-      channel,
-      description,
-      id,
-    } = videoDetails
+    const {publishedAt, title, videoUrl, viewCount, channel, description, id} =
+      videoDetails
 
     const {name, profileImageUrl, subscriberCount} = channel
     let postedAt = formatDistanceToNow(new Date(publishedAt))

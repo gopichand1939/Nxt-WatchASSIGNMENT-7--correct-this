@@ -22,7 +22,7 @@ export const ThumbnailText = styled.div`
   display: flex;
   flex-direction: row;
   padding: 5px;
-  text-decoration: 'none';
+  text-decoration: none;  // Remove quotes around 'none'
 `
 
 export const ChannelLogo = styled.img`
@@ -37,9 +37,11 @@ export const VideoTitle = styled.p`
   }
   color: ${props => (props.theme === 'dark' ? 'white' : '#0f0f0f')};
 `
+
 export const VideoTextContainer = styled.div`
   margin-left: 5px;
 `
+
 export const VideoDetailsContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -47,10 +49,12 @@ export const VideoDetailsContainer = styled.div`
     flex-direction: column;
   }
 `
+
 export const VideoDetailsContainer2 = styled.div`
   display: flex;
   flex-direction: row;
 `
+
 export const VideoDetailsText = styled.p`
   margin: 0px;
   margin-top: 8px;
@@ -64,3 +68,4 @@ export const VideoDetailsText = styled.p`
   @media screen and (min-width: 567px) {
     margin-bottom: 0px;
   }
+`

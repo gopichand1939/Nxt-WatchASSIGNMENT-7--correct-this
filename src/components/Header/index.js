@@ -3,20 +3,13 @@ import {FiSun, FiLogOut} from 'react-icons/fi'
 import {FaMoon} from 'react-icons/fa'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {IoMdClose} from 'react-icons/io'
-
 import {withRouter, Link} from 'react-router-dom'
-
 import Cookies from 'js-cookie'
-
 import Popup from 'reactjs-popup'
-
 import MenuItemsList from '../MenuItemsList'
-
 import ActiveMenuContext from '../../Context/ActiveMenuContext'
 import ThemeContext from '../../Context/ThemeContext'
-
 import 'reactjs-popup/dist/index.css'
-
 import {
   NavMobileContainer,
   HeaderLogoImg,
@@ -200,3 +193,5 @@ class Header extends Component {
     )
   }
 }
+
+export default withRouter(Header)
