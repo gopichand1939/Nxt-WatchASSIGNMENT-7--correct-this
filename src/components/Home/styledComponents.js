@@ -8,6 +8,26 @@ export const MainBody = styled.div`
   }
 `
 
+
+export const VideoDetailsText = styled.p`
+  margin: 0px;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  color: #475569;
+  text-decoration: none;
+  &:active {
+    text-decoration: none;
+  }
+  @media screen and (min-width: 567px) {
+    margin-bottom: 0px;
+  }
+`
+
+
+
+
+
 export const SidebarContainer = styled.div`
   display: none;
   @media screen and (min-width: 768px) {
